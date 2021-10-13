@@ -18,9 +18,8 @@ public class InitGameScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-      
 
+       
 
     }
 }

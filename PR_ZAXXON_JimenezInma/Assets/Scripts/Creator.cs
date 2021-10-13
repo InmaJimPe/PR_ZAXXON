@@ -18,7 +18,7 @@ public class Creator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //initGameScript = GameObject.Find("InitGame").GetComponent<InitGameScript>();
+        initGameScript = GameObject.Find("InitGame").GetComponent<InitGameScript>();
         intervalo = 0.25f;
 
         StartCoroutine("CrearObstaculos");
@@ -42,10 +42,11 @@ public class Creator : MonoBehaviour
         Vector3 newPos = initpos.position;
         while (true)
         {
-            
 
+            
             separacion = Random.Range(-12f, 12f);
             Vector3 despl = new Vector3(separacion, 0f, initpos.position.z);
+            intervalo = initGameScript.spaceshipSpeed / distanciaObstaculos;
             Instantiate(columna, despl, Quaternion.identity);
             
             yield return new WaitForSeconds(intervalo);
