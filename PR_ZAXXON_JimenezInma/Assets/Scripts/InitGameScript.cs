@@ -10,7 +10,7 @@ public class InitGameScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        spaceshipSpeed = 20f;
 
 
     }
@@ -18,7 +18,7 @@ public class InitGameScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        spaceshipSpeed = 20f;
+        
       
 
 
