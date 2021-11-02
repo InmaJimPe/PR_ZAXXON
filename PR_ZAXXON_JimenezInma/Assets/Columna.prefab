@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 2917887024075588203}
   - component: {fileID: 7399195578925652675}
   - component: {fileID: 8282705859193646391}
-  - component: {fileID: 8913070901181275253}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,20 +81,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &8913070901181275253
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8268350176156382949}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &8794550499578716032
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,9 +91,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4675302994223632405}
   - component: {fileID: 2278607987417941219}
-  m_Layer: 0
+  - component: {fileID: -6757931872462875575}
+  m_Layer: 6
   m_Name: Columna
-  m_TagString: Untagged
+  m_TagString: Columna
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,3 +126,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa444d20e93f43438cbbd094afb33f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initObject: {fileID: 8794550499578716032}
+--- !u!65 &-6757931872462875575
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8794550499578716032}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0971777, y: 16.406557, z: 1.1005707}
+  m_Center: {x: 1.291162, y: 5.0599203, z: -0.05028534}
