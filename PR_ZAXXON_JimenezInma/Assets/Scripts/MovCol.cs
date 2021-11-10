@@ -12,11 +12,7 @@ public class MovCol : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /*initObject = GameObject.Find("InitGame");
-
-        initGameScript = initObject.GetComponent<InitGameScript>();
-
-        speed = initGameScript.spaceshipSpeed;*/
+        
     }
 
     // Update is called once per frame

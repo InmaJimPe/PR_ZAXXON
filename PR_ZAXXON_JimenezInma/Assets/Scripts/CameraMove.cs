@@ -20,11 +20,7 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Con esta línea, nuestro objeto tendrá la misma posición que el jugador
-        //transform.position = playerPosition.position;
-        //Con esta línea, la cámara mantiene su posición en X y Z, pero sigue al jugador en Y
-        //Útil para juegos de plataformas
-        //transform.position = new Vector3(transform.position.x, playerPosition.position.y, transform.position.z);
+        
         //Con este código, la cámara seguirá al jugador, pero alejado algo en el eje Z
         transform.position = new Vector3(playerPosition.position.x, playerPosition.position.y + 1, playerPosition.position.z -10);
         //Con este código, conseguimos que siga al objeto pero con suavidad

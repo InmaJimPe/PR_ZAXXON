@@ -18,14 +18,11 @@ public class Creator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //initGameScript = GameObject.Find("InitGame").GetComponent<InitGameScript>();
+       
         intervalo = 0.25f;
 
         StartCoroutine("CrearObstaculos");
-
-        
-              
-
+                
     }
 
     // Update is called once per frame
