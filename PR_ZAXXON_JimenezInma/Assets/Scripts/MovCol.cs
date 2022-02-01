@@ -7,7 +7,7 @@ public class MovCol : MonoBehaviour
     [SerializeField] GameObject initObject;
     InitGameScript initGameScript;
 
-    float speed = 20f;
+    float speed = 50f;
     
     // Start is called before the first frame update
     void Start()
