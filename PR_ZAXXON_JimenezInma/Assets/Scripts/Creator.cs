@@ -19,7 +19,7 @@ public class Creator : MonoBehaviour
     void Start()
     {
        
-        intervalo = 0.25f;
+        intervalo = 0.17f;
 
         StartCoroutine("CrearObstaculos");
                 
