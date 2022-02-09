@@ -9,7 +9,7 @@ public class InitGameScript : MonoBehaviour
     public float spaceshipSpeed;
     public int levelGame;
     public bool alive;
-    [SerializeField] GameObject navePrefab;
+    [SerializeField] GameObject fantasmaPrefab;
     bool active;
     // Start is called before the first frame update
     void Start()
@@ -31,7 +31,7 @@ public class InitGameScript : MonoBehaviour
     public void Morir()
     {
 
-        navePrefab.SetActive(false);
+        fantasmaPrefab.SetActive(false);
 
         active = !active;
         Time.timeScale = (active) ? 0 : 1f;

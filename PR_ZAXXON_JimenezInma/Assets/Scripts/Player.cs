@@ -57,7 +57,7 @@ public class Player : MonoBehaviour
             speedx = 0;
         }
 
-        if ((posY > 1.40f && y < 0) || (posY < 12f && y > 0))
+        if ((posY > 2f && y < 0) || (posY < 12f && y > 0))
         {
             speedy = 20;
         }
