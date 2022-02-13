@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     
 
     InitGameScript initGameScript;
-    [SerializeField] GameObject initGameObject;
+    GameObject initGameObject;
         // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
         //print("Hit" + other.gameObject.name);
         if (other.gameObject.CompareTag("Columna"))
         {
-            initGameScript.SendMessage("Morir");
+            initGameScript.SendMessage("Chocar");
             
         }
     }
