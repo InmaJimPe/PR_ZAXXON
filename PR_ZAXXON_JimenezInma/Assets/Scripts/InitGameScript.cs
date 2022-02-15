@@ -34,7 +34,6 @@ public class InitGameScript : MonoBehaviour
 
         active = !active;
         Time.timeScale = (active) ? 0 : 1f;
-
         SceneManager.LoadScene(2);
     }
     public void Chocar()
